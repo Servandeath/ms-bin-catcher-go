@@ -16,7 +16,19 @@
 
 ## Стек
 
-Python 3.11+, FastAPI, httpx, pytest · МойСклад JSON API 1.2
+Python 3.11+, FastAPI, SQLite, httpx, pytest · МойСклад JSON API 1.2
+
+Страница — HTML с htmx, без сборки и установки. Все запросы к МС идут с сервера,
+телефон получает только готовые куски страницы.
+
+## Синхронизация
+
+```
+python -m scripts.sync            # изменения справочников и остатков
+python -m scripts.sync stock      # только остатки
+python -m scripts.sync --full     # всё целиком, раз в сутки
+python -m pytest                  # тесты (pip install -r requirements-dev.txt)
+```
 
 ## Статус
 

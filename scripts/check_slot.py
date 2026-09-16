@@ -21,7 +21,7 @@ ORDER BY st.name, sl.name
 
 def main() -> None:
     if not DB_PATH.exists():
-        raise SystemExit("Базы нет. Сначала: python -m scripts.sync_stock")
+        raise SystemExit("Базы нет. Сначала: python -m scripts.sync")
     text = sys.argv[1] if len(sys.argv) > 1 else input("Часть названия ячейки: ")
     conn = connect()
     try:
