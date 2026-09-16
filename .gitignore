@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Локальная база с данными склада — в публичный репо не попадает
+data/
